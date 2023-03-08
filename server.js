@@ -1,13 +1,15 @@
-const koa = require('koa')
-const koaRouter = require('koa-router')()
+import koa from 'koa'
+import koaRouter from 'koa-router'
+import { createApp } from 'vue'
+import { renderToString } from 'vue/server-renderer'
+// const koa = require('koa')
+// const koaRouter = require('koa-router')()
+
+const router = koaRouter()
 const server = new koa()
 const port = 8080
 
-server.use(koaRouter.routes())
-
-
-const createApp = require('vue').createApp
-const renderToString = require('vue/server-renderer').renderToString
+server.use(router.routes())
 
 //what's the difference between createSSRApp and createApp??
 
@@ -30,7 +32,7 @@ const app = createApp({
    }
 })
 
-koaRouter.get('/', async (ctx) => {
+router.get('/', async (ctx) => {
    // ctx.body = `
    // <!DOCTYPE html>      
    // <html lang="en">
