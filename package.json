@@ -1,0 +1,24 @@
+{
+  "name": "vue-raw-ssr",
+  "version": "1.0.0",
+  "description": "A project to understand SSR with vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoMoneyToRaisePigs/vue-raw-ssr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoMoneyToRaisePigs/vue-raw-ssr/issues"
+  },
+  "homepage": "https://github.com/NoMoneyToRaisePigs/vue-raw-ssr#readme",
+  "dependencies": {
+    "koa": "^2.14.1",
+    "koa-router": "^12.0.0",
+    "vue": "^3.2.47"
+  }
+}
