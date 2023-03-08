@@ -1,0 +1,20 @@
+<!DOCTYPE html>      
+<html lang="en">
+  <head>
+    <title>Vue Raw SSR</title>
+  </head>
+  <script type="importmap">
+   {
+      "imports": {
+         "vue": "/node_modules/vue/dist/vue.esm-browser.js"
+      }
+   }
+   </script>
+  <body>
+      <div id="app">
+         <div>{{ msg }}</div>
+         <button @click="increaseCount">{{ count }}</button>
+      </div>
+  </body>
+  <script type="module" src="/client.js"></script>
+</html>
